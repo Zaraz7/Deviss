@@ -23,6 +23,7 @@ namespace Deviss
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new EnterPage());
         }
     }
 }

@@ -24,5 +24,10 @@ namespace Deviss
         {
             InitializeComponent();
         }
+
+        private void EnterClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
