@@ -32,7 +32,27 @@ namespace Deviss
                 MessageBox.Show("Обнаружены пустые поля!");
                 return;
             }
-            
+            using (var db = new DevissDBEntities())
+            {
+                var user = db.User.AsNoTracking().FirstOrDefault(u => u.Login == tbLogin.Text && u.Password == pwPassword.Password);
+                if (user == null)
+                { 
+                    MessageBox.Show("Неверный логин или пароль!");
+                    return;
+                }
+                switch (user.Role)
+                {
+                    case "admi":
+                        MessageBox.Show($"Вы вошли под админом, {user.FullName}");
+                        break;
+                    case "teac":
+                        MessageBox.Show($"Вы вошли за учителя, {user.FullName}");
+                        break;
+                    default:
+                        MessageBox.Show($"???");
+                        break;
+                }
+            }
         }
     }
 }
