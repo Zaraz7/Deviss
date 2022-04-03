@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Device_Power.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -97,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Device_Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Device_Power.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Device_Power.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
