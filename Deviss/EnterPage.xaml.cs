@@ -27,7 +27,12 @@ namespace Deviss
 
         private void EnterClick(object sender, RoutedEventArgs e)
         {
-
+            if (string.IsNullOrEmpty(tbLogin.Text) || string.IsNullOrEmpty(pwPassword.Password))
+            {
+                MessageBox.Show("Обнаружены пустые поля!");
+                return;
+            }
+            
         }
     }
 }
