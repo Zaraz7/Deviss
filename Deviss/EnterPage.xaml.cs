@@ -47,6 +47,7 @@ namespace Deviss
                         break;
                     case "teac":
                         MessageBox.Show($"Вы вошли за учителя, {user.FullName}");
+                        Manager.MainFrame.Navigate(new Pages.ClientGeneralPage());
                         break;
                     default:
                         MessageBox.Show($"???");

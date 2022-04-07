@@ -88,6 +88,7 @@
     <Compile Include="IssueType.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Manager.cs" />
     <Compile Include="Pages\ClientGeneralPage.xaml.cs">
       <DependentUpon>ClientGeneralPage.xaml</DependentUpon>
     </Compile>

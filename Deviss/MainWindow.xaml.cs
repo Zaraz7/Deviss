@@ -24,6 +24,7 @@ namespace Deviss
         {
             InitializeComponent();
             MainFrame.Navigate(new EnterPage());
+            Manager.MainFrame = MainFrame;
         }
     }
 }
