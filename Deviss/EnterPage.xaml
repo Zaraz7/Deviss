@@ -14,7 +14,7 @@
             <TextBox x:Name="tbLogin" Margin="0,0,0,5"/>
             <TextBlock Text="Пароль"/>
             <PasswordBox x:Name="pwPassword" Margin="0,0,0,15"/>
-            <Button Click="EnterClick">
+            <Button Click="EnterClick" Width="70">
                 <TextBlock Text="Войти" Foreground="#fff"/>
             </Button>
         </StackPanel>

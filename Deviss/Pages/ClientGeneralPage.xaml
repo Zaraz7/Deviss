@@ -10,12 +10,12 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100" MaxWidth="120" />
+            <ColumnDefinition Width="160" />
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="#Bbb" Margin="0,80,0,0">
-            <Button>
-                <TextBlock Text="+ Сообщение" Foreground="#fff"/>
+            <Button Click="NewIsseClick">
+                <TextBlock Text="Новое сообщение" Foreground="#fff"/>
             </Button>
         </StackPanel>
     </Grid>

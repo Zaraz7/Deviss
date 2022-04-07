@@ -24,5 +24,10 @@ namespace Deviss.Pages
         {
             InitializeComponent();
         }
+
+        private void NewIsseClick(object sender, RoutedEventArgs e)
+        {
+            return;
+        }
     }
 }
