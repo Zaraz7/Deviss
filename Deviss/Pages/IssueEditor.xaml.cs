@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Deviss.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ClientGeneralPage.xaml
+    /// Логика взаимодействия для IssueEditor.xaml
     /// </summary>
-    public partial class ClientGeneralPage : Page
+    public partial class IssueEditor : Page
     {
-        public ClientGeneralPage()
+        public IssueEditor()
         {
             InitializeComponent();
-            SingleFrame.Navigate(new Empty());
-            Manager.SingleFrame = SingleFrame;
-        }
-
-        private void NewIssueClick(object sender, RoutedEventArgs e)
-        {
-            SingleFrame.Navigate(new IssueEditor());
         }
     }
 }

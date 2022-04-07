@@ -14,7 +14,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="#Bbb" Margin="0,80,0,0">
-            <Button Click="NewIsseClick">
+            <Button Click="NewIssueClick">
                 <TextBlock Text="Новое сообщение" Foreground="#fff"/>
             </Button>
         </StackPanel>
