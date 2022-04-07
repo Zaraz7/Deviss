@@ -10,5 +10,6 @@ namespace Deviss
     class Manager
     {
         public static Frame MainFrame;
+        public static Frame SingleFrame;
     }
 }

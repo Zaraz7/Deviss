@@ -92,6 +92,9 @@
     <Compile Include="Pages\ClientGeneralPage.xaml.cs">
       <DependentUpon>ClientGeneralPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Empty.xaml.cs">
+      <DependentUpon>Empty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
@@ -128,6 +131,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\ClientGeneralPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Empty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

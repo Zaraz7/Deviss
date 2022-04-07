@@ -25,5 +25,8 @@
             <Setter Property="Background" Value="#444"/>
             <Setter Property="Margin" Value="5"/>
         </Style>
+        <Style TargetType="Frame">
+            <Setter Property="NavigationUIVisibility" Value="Hidden"/>
+        </Style>
     </Application.Resources>
 </Application>

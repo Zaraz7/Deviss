@@ -18,5 +18,6 @@
                 <TextBlock Text="Новое сообщение" Foreground="#fff"/>
             </Button>
         </StackPanel>
+        <Frame x:Name="SingleFrame" Grid.Column="1" Margin="5"/>
     </Grid>
 </Page>

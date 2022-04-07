@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Deviss.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ClientGeneralPage.xaml
+    /// Логика взаимодействия для Empty.xaml
     /// </summary>
-    public partial class ClientGeneralPage : Page
+    public partial class Empty : Page
     {
-        public ClientGeneralPage()
+        public Empty()
         {
             InitializeComponent();
-            SingleFrame.Navigate(new Empty());
-            Manager.SingleFrame = SingleFrame;
-        }
-
-        private void NewIsseClick(object sender, RoutedEventArgs e)
-        {
-            return;
         }
     }
 }
