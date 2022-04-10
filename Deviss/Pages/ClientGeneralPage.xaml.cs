@@ -23,13 +23,16 @@ namespace Deviss.Pages
         public ClientGeneralPage()
         {
             InitializeComponent();
-            SingleFrame.Navigate(new Empty());
-            Manager.SingleFrame = SingleFrame;
+            //SingleFrame.Navigate(new Empty());
+            //Manager.SingleFrame = SingleFrame;
+            dgIssue.ItemsSource = DevissDBEntities.GetContext().Issue.ToList();
+            dgTeachers.ItemsSource = DevissDBEntities.GetContext().User.ToList();
+            dgDevises.ItemsSource = DevissDBEntities.GetContext().Device.ToList();
         }
 
         private void NewIssueClick(object sender, RoutedEventArgs e)
         {
-            SingleFrame.Navigate(new IssueEditor());
+            //SingleFrame.Navigate(new IssueEditor());
         }
     }
 }

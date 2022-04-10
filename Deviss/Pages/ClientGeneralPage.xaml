@@ -14,10 +14,49 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Background="#Bbb" Margin="0,80,0,0">
+        </StackPanel>
+        <TabControl Grid.Column="1">
+            <TabItem Header="Проблема">
+                <DataGrid x:Name="dgIssue" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Тип" Binding="{Binding Type}"/>
+                        <DataGridTextColumn Header="Устройство" Binding="{Binding Device.Type}"/>
+                        <DataGridTextColumn Header="Модель" Binding="{Binding Device.Model}"/>
+                        <DataGridTextColumn Header="Каб." Binding="{Binding ClosetNo}"/>
+                        <DataGridTextColumn Header="Сообщение" Binding="{Binding Contents}"/>
+                        <DataGridTextColumn Header="Отправитель" Binding="{Binding User.FullName}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Преподаватели">
+                <DataGrid x:Name="dgTeachers" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Логин" Binding="{Binding Login}"/>
+                        <DataGridTextColumn Header="Кабинет" Binding="{Binding ClosetNo}"/>
+                        <DataGridTextColumn Header="Полное имя" Binding="{Binding FullName}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Устройства">
+                <DataGrid x:Name="dgDevises" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Кабинет" Binding="{Binding ClosetNo}"/>
+                        <DataGridTextColumn Header="Тип" Binding="{Binding Type}"/>
+                        <DataGridTextColumn Header="Модель" Binding="{Binding Model}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Background="#Bbb" Margin="0,80,0,0">
             <Button Click="NewIssueClick">
                 <TextBlock Text="Новое сообщение" Foreground="#fff"/>
             </Button>
         </StackPanel>
-        <Frame x:Name="SingleFrame" Grid.Column="1" Margin="5"/>
+        <Frame x:Name="SingleFrame" Grid.Column="1" Margin="5"/>-->
+        
     </Grid>
 </Page>

@@ -44,13 +44,14 @@ namespace Deviss
                 {
                     case "admi":
                         MessageBox.Show($"Вы вошли под админом, {user.FullName}");
+                        Manager.MainFrame.Navigate(new Pages.ClientGeneralPage());
                         break;
                     case "teac":
                         MessageBox.Show($"Вы вошли за учителя, {user.FullName}");
                         Manager.MainFrame.Navigate(new Pages.ClientGeneralPage());
                         break;
                     default:
-                        MessageBox.Show($"???");
+                        MessageBox.Show($"Неверно заданная роль. Обратитесь к администратору");
                         break;
                 }
             }

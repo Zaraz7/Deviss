@@ -15,11 +15,21 @@ namespace Deviss
     
     public partial class DevissDBEntities : DbContext
     {
+        private static DevissDBEntities _context;
         public DevissDBEntities()
             : base("name=DevissDBEntities")
         {
         }
-    
+        
+        public static DevissDBEntities GetContext()
+        {
+            if (_context == null)
+                _context = new DevissDBEntities();
+            return _context;
+        }
+
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
